@@ -3,22 +3,26 @@ import mongoose from "mongoose";
 const jurnalModel = new mongoose.Schema(
     {},
     {
-        entryDate : {
+        EntryDate : {
             type : Date,
-            required : true
+            required : true, 
+            trim : true 
         },
-        tittle : {
+        Tittle : {
             type : String,
-            required : true
+            required : true, 
+            trim : true 
         },
-        content : {
+        Content : {
             type : String,
-            required : true
+            required : true, 
+            trim : true 
         },
         User : {
             type : mongoose.Schema.Types.ObjectId,
             ref : "User",
-            required : true
+            required : true, 
+            trim : true 
         }
 
     },
