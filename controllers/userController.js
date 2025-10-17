@@ -1,5 +1,5 @@
-import UserModel from "../models/userModel.js";
-
+import userModel from "../model/userModel.js";
+import {hash } from "../utils/hashUtils.js"
 
 export const register = async (req, res) => {
     try {
@@ -9,7 +9,7 @@ export const register = async (req, res) => {
 
         console.hashPassword = hash(registerData.password)
 
-        await UserModel.create({
+        await userModel.create({
             username: registerData.username,
             email: registerData.email,
             password: registerData.password
@@ -31,7 +31,7 @@ export const login = async (req, res) => {
     try {
         const loginData = req.body
 
-        const user = await UserModel.findOne({
+        const user = await userModel.findOne({
             email: loginData.email
         })
 
@@ -41,7 +41,7 @@ export const login = async (req, res) => {
                 data: null
             })
         }
-        if (compare(loginData.password, user.password == loginData.password)) {
+        if (compare(loginData.password, user.password)) {
             res.status(200).json({
                 message: "Login Berhasil",
                 data: {

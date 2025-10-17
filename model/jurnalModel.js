@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const jurnalSchema= new mongoose.Schema(
+const jurnalSchema = new mongoose.Schema(
     {
         EntryDate : {
             type : Date,
@@ -17,10 +17,11 @@ const jurnalSchema= new mongoose.Schema(
             required : true, 
             trim : true 
         },
-        
+    },
+    {
         timestamps : true
     }
 )
 
 const jurnalModel =  mongoose.model ("Jurnal", jurnalSchema);
-export default jurnalModel
+export default jurnalModel
