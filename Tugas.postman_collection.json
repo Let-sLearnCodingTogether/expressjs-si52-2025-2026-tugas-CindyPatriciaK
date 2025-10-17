@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "8abaf5d3-2703-4b98-9807-efbf653e36f0",
+		"name": "Tugas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49014540",
+		"_collection_link": "https://cindypatriciak-3015394.postman.co/workspace/cindypatriciak's-Workspace~25386415-7deb-4f60-81a6-1d10bd1129a4/collection/49014540-8abaf5d3-2703-4b98-9807-efbf653e36f0?action=share&source=collection_link&creator=49014540"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntryDate\" : \"00\",\r\n    \"Title\" : \"AHAHAHAH BISA\",\r\n    \"Content\" : \"EZZZZZZZ \",\r\n    \"User\" : \"TUYUL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jurnal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jurnal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/jurnal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntryDate\" : \"00\",\r\n    \"Title\" : \"edye\",\r\n    \"Content\" : \"edewd\",\r\n    \"User\" : \"efafde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jurnal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jurnal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntryDate\" : \"00\",\r\n    \"Title\" : \"edye\",\r\n    \"Content\" : \"edewd\",\r\n    \"User\" : \"efafde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jurnal",
+						"68f1bd24e84b297d1e71a60d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntryDate\" : \"00\",\r\n    \"Title\" : \"edye\",\r\n    \"Content\" : \"edewd\",\r\n    \"User\" : \"efafde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jurnal",
+						"68f1bd24e84b297d1e71a60d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EntryDate\" : \"00\",\r\n    \"Title\" : \"edye\",\r\n    \"Content\" : \"edewd\",\r\n    \"User\" : \"efafde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/jurnal/68f1bd24e84b297d1e71a60d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"jurnal",
+						"68f1bd24e84b297d1e71a60d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

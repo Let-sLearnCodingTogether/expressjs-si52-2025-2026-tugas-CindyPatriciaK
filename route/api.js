@@ -7,5 +7,7 @@ api.get("/jurnal", jurnalController.createJurnal)
 api.post("/jurnal", jurnalController.createJurnal)
 api.put("/jurnal/:id", jurnalController.updateJurnal)
 api.delete("/jurnal/:id", jurnalController.deleteJurnal)
+api.post("/jurnal/:id", jurnalController.listJurnal)
+
 
 export default api

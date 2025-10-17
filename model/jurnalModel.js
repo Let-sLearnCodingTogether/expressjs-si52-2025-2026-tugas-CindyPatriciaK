@@ -1,14 +1,13 @@
 import mongoose from "mongoose";
 
-const jurnalModel = new mongoose.Schema(
-    {},
+const jurnalSchema= new mongoose.Schema(
     {
         EntryDate : {
             type : Date,
             required : true, 
             trim : true 
         },
-        Tittle : {
+        Title : {
             type : String,
             required : true, 
             trim : true 
@@ -18,18 +17,10 @@ const jurnalModel = new mongoose.Schema(
             required : true, 
             trim : true 
         },
-        User : {
-            type : mongoose.Schema.Types.ObjectId,
-            ref : "User",
-            required : true, 
-            trim : true 
-        }
-
-    },
-    {
+        
         timestamps : true
     }
 )
 
-const jurnalMode =  mongoose.model ("Jurnal", jurnalModel);
+const jurnalModel =  mongoose.model ("Jurnal", jurnalSchema);
 export default jurnalModel

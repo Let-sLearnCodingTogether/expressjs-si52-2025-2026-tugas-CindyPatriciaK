@@ -1,14 +1,13 @@
-import jurnalModel from "../model/jurnalModel";
+import jurnalModel from "../model/jurnalModel.js";
 
 export const createJurnal = async (req, res) => {
     try {
         const request = req.body
 
-        const response = await jurnalModel.createJurnal({
+        const response = await jurnalModel.create({
             EntryDate: request.EntryDate,
-            Tittle: request.Tittle,
-            Content: request.Content,
-            User: request.User
+            Title: request.Title,
+            Content: request.Content
         })
         res.status(201).json({
             message: "Jurnal berhasil dibuat",
@@ -49,9 +48,9 @@ export const updateJurnal = async (req, res) => {
             })
         }
         const response = await jurnalModel.findByIdAndUpdate(id, {
-            Nama: request.Nama,
-            NPM: request.NPM,
-            Jurusan: request.Jurusan
+            EntryDate: request.EntryDate,
+            Title: request.Title,
+            Content: request.Content
         })
 
         if (!response) {
