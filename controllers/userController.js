@@ -1,5 +1,7 @@
 import userModel from "../model/userModel.js";
-import {hash } from "../utils/hashUtils.js"
+import {hash } from "../utils/hashUtils.js";
+import { compare } from "../utils/hashUtils.js";
+import bcrypt from "bcrypt";
 
 export const register = async (req, res) => {
     try {
@@ -59,9 +61,6 @@ export const login = async (req, res) => {
         res.status(500).json({
             message: error,
             data: null
-        })
-    }
-
+        })
+    }
 }
-
-
