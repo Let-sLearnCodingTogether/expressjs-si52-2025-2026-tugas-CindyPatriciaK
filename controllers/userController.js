@@ -51,16 +51,17 @@ export const login = async (req, res) => {
                     email: user.email,
                     token: "TOKEN"
                 }
-            })
-            return res.status(401).json({
+            })}
+            return res.status(201).json({
                 message: "Login Tidak Berhasil",
                 data: null
             })
-        }
+        
     } catch (error) {
         res.status(500).json({
-            message: error,
+            message: error.message,
             data: null
         })
     }
+
 }
