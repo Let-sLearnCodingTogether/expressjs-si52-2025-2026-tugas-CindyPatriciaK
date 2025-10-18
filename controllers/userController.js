@@ -63,5 +63,4 @@ export const login = async (req, res) => {
             data: null
         })
     }
-
 }
