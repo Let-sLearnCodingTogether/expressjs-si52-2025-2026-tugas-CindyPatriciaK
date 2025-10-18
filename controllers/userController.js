@@ -1,7 +1,7 @@
 import userModel from "../model/userModel.js";
 import {hash } from "../utils/hashUtils.js";
 import { compare } from "../utils/hashUtils.js";
-import bcrypt from "bcrypt";
+import { jwtSignUtil } from "../utils/jwtSignUtil.js";
 
 export const register = async (req, res) => {
     try {
@@ -14,7 +14,7 @@ export const register = async (req, res) => {
         await userModel.create({
             username: registerData.username,
             email: registerData.email,
-            password: registerData.password
+            password: hashPassword
         })
 
         res.status(201).json({
