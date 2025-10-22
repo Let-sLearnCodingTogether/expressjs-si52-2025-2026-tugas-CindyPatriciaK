@@ -9,7 +9,7 @@ export const register = async (req, res) => {
 
         console.log(registerData);
 
-        console.hashPassword = hash(registerData.password)
+        const hashPassword = hash(registerData.password)
 
         await userModel.create({
             username: registerData.username,
@@ -49,10 +49,11 @@ export const login = async (req, res) => {
                 data: {
                     username: user.username,
                     email: user.email,
-                    token: "TOKEN"
+                    token: jwtSignUtil(user)
                 }
-            })}
-            return res.status(201).json({
+            })
+        }
+            return res.status(401).json({
                 message: "Login Tidak Berhasil",
                 data: null
             })
