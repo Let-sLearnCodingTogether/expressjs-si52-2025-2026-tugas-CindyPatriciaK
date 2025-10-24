@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.s"
+    "dev": "nodemon app.js"
   },
+  "type" : "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Let-sLearnCodingTogether/expressjs-si52-2025-2026-tugas-CindyPatriciaK.git"
